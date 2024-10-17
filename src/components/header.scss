@@ -46,7 +46,6 @@ header {
     }
   }
   .links-container {
-    font-family: Space Grotesk;
     padding-inline-end: 2rem;
     @include breakpoint($mobile) {
       font-size: 0.75em;

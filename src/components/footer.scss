@@ -1,0 +1,88 @@
+@import "../mixins";
+@import "../variables";
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .footer-container {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    margin-block: 3rem;
+  }
+  .footer-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1em;
+  }
+  .contact-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 60%;
+    @include breakpoint($mobile) {
+      flex-basis: 100%;
+    }
+  }
+  .yazy-button {
+    width: 180px;
+    height: 40px;
+  }
+  a {
+    font-family: inherit;
+    font-size: 1em;
+    text-decoration: unset;
+    color: black;
+    &:hover {
+      color: rgba(94, 94, 94, 0.8);
+    }
+    @include breakpoint($mobile) {
+      font-size: 0.75em;
+    }
+    @include breakpoint($tablet) {
+      font-size: 0.75em;
+    }
+    @include breakpoint($desktop) {
+      font-size: 1em;
+    }
+  }
+  h4 {
+    font-weight: 400;
+    @include breakpoint($mobile) {
+      display: none;
+    }
+  }
+  h2 {
+    font-family: yazy;
+    font-weight: 400;
+    font-size: 3.5em;
+    margin-top: unset;
+    @include breakpoint($mobile) {
+      font-size: 1.75em;
+    }
+    @include breakpoint($tablet) {
+      font-size: 2.5em;
+    }
+    @include breakpoint($desktop) {
+      font-size: 3.5em;
+    }
+  }
+  span {
+    line-height: 0;
+    position: relative;
+    @include breakpoint($mobile) {
+      font-size: 2em;
+      top: 20px;
+    }
+    @include breakpoint($tablet) {
+      font-size: 2.25em;
+      top: 36px;
+    }
+    @include breakpoint($desktop) {
+      font-size: 2.75em;
+      top: 64px;
+    }
+  }
+}
