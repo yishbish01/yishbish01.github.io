@@ -7,26 +7,30 @@ const Header = () => {
       <nav>
         <ul className="logo-container">
           <li>
-            <Link to="/">
-              <span className="logo">*</span>
+            <Link to="/" className="logo">
+              *
             </Link>
           </li>
           <li>
-            <Link to="/">
-              <span className="YR">YR</span>
+            <Link to="/" className="logo-text">
+              YR
             </Link>
           </li>
         </ul>
-        <ul>
+        <ul className="links-container">
           <li>
-            <Link to="/misc">Misc</Link>
+            <Link to="/misc">MISC</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/about">ABOUT</Link>
           </li>
           <li>
-            <a href="https://google.com" target="_blank">
-              Resume
+            <a
+              href="https://drive.google.com/file/d/1O3PD0M2Am6UjwHBOZq1dqAo1fzLd7VVF/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              RESUME
             </a>
           </li>
         </ul>
