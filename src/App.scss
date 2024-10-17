@@ -1,0 +1,12 @@
+@font-face {
+  font-weight: 400;
+  font-style: normal;
+  font-family: "yazy";
+  src: url("./fonts/yazy.ttf");
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: white;
+}

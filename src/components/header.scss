@@ -1,0 +1,45 @@
+header {
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  padding: 10px;
+  nav {
+    width: 1030px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    filter: drop-shadow(rgba(158, 158, 158, 0.27) -11px 25px 19px);
+    background-color: rgba(250, 250, 250, 0.73);
+    padding: 16px;
+    // line-height: 100%;
+    border-style: solid;
+  }
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: unset;
+    padding: unset;
+    font-family: Space Grotesk;
+  }
+  li:not(:first-child) {
+    padding-inline-start: 16px;
+  }
+  a {
+    text-decoration: unset;
+    color: unset;
+  }
+  .logo-container {
+    font-family: yazy;
+    .logo {
+      font-size: 75px;
+    }
+    .YR {
+      vertical-align: text-bottom;
+      font-size: 34px;
+    }
+  }
+}
