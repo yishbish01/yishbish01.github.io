@@ -18,10 +18,12 @@ const Footer = () => {
         </h2>
         <div className="footer-info">
           <div className="contact-links">
-            <YazyButton
-              text="SEND AN EMAIL"
-              icon={<HiArrowSmallRight size="1.5em" />}
-            />
+            <a href="mailto:yashiniravindran@gmail.com">
+              <YazyButton
+                text="SEND AN EMAIL"
+                icon={<HiArrowSmallRight size="1.5em" />}
+              />
+            </a>
             <a
               href="https://www.linkedin.com/in/yashini011003/"
               target="_blank"

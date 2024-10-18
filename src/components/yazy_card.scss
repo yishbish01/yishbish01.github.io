@@ -1,0 +1,38 @@
+.yazy-card {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  padding: 32px;
+  padding-bottom: unset;
+  img {
+    max-width: 100%;
+  }
+  .yazy-button {
+    width: 150px;
+    height: 40px;
+  }
+  a {
+    text-decoration: none;
+  }
+  .card-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 16px;
+  }
+  .tags {
+    display: flex;
+    gap: 16px;
+  }
+  h2 {
+    font-family: yazy;
+    font-size: 3em;
+    font-weight: 400;
+    margin: unset;
+  }
+  h4 {
+    font-weight: 400;
+  }
+}

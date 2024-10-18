@@ -5,8 +5,27 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  .intro {
+  section {
     width: 80vw;
+  }
+  .featured-work {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    margin-bottom: 40px;
+  }
+  .card-row {
+    display: flex;
+    gap: 64px;
+    @include breakpoint($mobile) {
+      flex-direction: column;
+    }
+    @include breakpoint($tablet) {
+      flex-direction: column;
+    }
+    @include breakpoint($desktop) {
+      flex-direction: row;
+    }
   }
   h1 {
     font-family: yazy;
@@ -21,7 +40,7 @@ main {
       margin-block-end: 20px;
     }
     @include breakpoint($desktop) {
-      font-size: 7em;
+      font-size: 9em;
       margin-block-end: 40px;
     }
   }
@@ -31,7 +50,7 @@ main {
     font-size: 3em;
     font-weight: 400;
     position: relative;
-    padding-inline-end: 0.1em;
+    padding-inline-end: 16px;
     @include breakpoint($mobile) {
       font-size: 2.5em;
       top: 12px;
@@ -41,23 +60,21 @@ main {
       top: 16px;
     }
     @include breakpoint($desktop) {
-      font-size: 5em;
-      top: 20px;
+      font-size: 7em;
+      top: 36px;
     }
   }
   h3 {
     font-weight: 400;
+    margin-bottom: unset;
     @include breakpoint($mobile) {
       font-size: 1em;
-      margin-block-end: 40px;
     }
     @include breakpoint($tablet) {
       font-size: 1.5em;
-      margin-block-end: 60px;
     }
     @include breakpoint($desktop) {
-      font-size: 2em;
-      margin-block-end: 80px;
+      font-size: 3em;
     }
   }
   .description-container {
@@ -70,6 +87,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-block: 120px;
     hr {
       position: absolute;
       z-index: 0;
